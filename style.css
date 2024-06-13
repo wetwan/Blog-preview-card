@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --YELLOW: hsl(47, 88%, 63%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+}
+img{
+    display: block;
+}
+body{
+    font-family: 'figtree';
+    height: 100vh;
+    background-color:var(--YELLOW);
+    display: flex;
+    flex-direction: column;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    font-family: 'figtree';
+    background-color:hsl(0, 0%, 100%) ;
+    height: auto;
+    width: 350px;
+    border: 1px solid ;
+    margin: 200px auto;
+    border-radius: 15px;
+    box-shadow: 15px 15px 1px var(--Black);
+}
+.img{
+    width: 320px;
+    height: 200px;
+    margin: 20px auto;
+    border-radius: 20px;
+}
+span{
+    font-family: 'figtree';
+    display: block;
+    margin: 10px;
+      margin-left: 15px;
+    height: 25px;
+    padding: 3px;
+    width: 80px;
+    text-align: center;
+    Font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: var(--YELLOW);
+    line-height: 1.0; 
+}
+p{ font-family: 'figtree';
+    margin: 10px;
+      margin-left: 15px;
+    Font-size: 16px;
+    font-weight: 500;
+}
+.p{
+    color: var(--Grey);
+}
+h1{ 
+    font-family: 'figtree';
+    margin: 10px;
+      margin-left: 15px;
+     color: var(--YELLOW);
+   font-size: 24px;
+
+}
+figure{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+    margin-left: 10px;
+    height: 60px;
+}
+figcaption{
+    Font-size: 16px;
+    font-weight: bold;
+}
+figure > img{
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+}
+
+@media only screen and (max-width:375px) {
+    .card{
+        margin: 100px auto;
+        width: 300px;
+        box-shadow: 8px 8px 1px var(--Black);
+    }
+    h1{   
+        margin-top: 5px;
+        margin-left: 15px;
+        font-size: 22px;
+        color: var(--Black);
+    }
+    .img{
+        width: 270px;
+        height: 190px;
+        margin: 5px auto;
+        border-radius: 25px;
+    }
+    figure,span,p{
+        margin-top: 5px;
+        margin-left: 15px;
+    }
+    figure > img{
+        margin-left: 5px;
+    }
+}
+@media only screen and (max-width:1440px) {
+    h1{   
+        
+        color: var(--Black);
+    }
+    .card{
+        margin: 100px auto;
+
+    }
+}
