@@ -121,6 +121,7 @@ figure > img{
         color: var(--Black);
     }
     .card{
+        box-shadow: 8px 8px 1px var(--Black);
         margin: 100px auto;
 
     }
